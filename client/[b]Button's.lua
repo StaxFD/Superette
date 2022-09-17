@@ -1,6 +1,6 @@
 function _SuperetteButton(Shop)
     for k,v in pairs(_Superette.systeme) do            
-        RageUI.Button(v.categorie.." ("..#v.items.." items)", nil, {}, true, {
+        RageUI.Button(v.categorie.." ("..#v.items.." items)", nil, {LeftBadge = RageUI.BadgeStyle.Star}, true, {
             onSelected = function()
                 _Superette.toItemSUP = v.items
             end,
