@@ -10,7 +10,7 @@ end
 
 function _SuperetteSupButton(Shop)
     for k,v in pairs(_Superette.toItemSUP) do 
-        RageUI.Button(v.label,nil,{RightLabel = _Superette.Translations.Menu.colorprice..v.price.."$"},true,{
+        RageUI.Button(v.label,nil,{LeftBadge = RageUI.BadgeStyle.Star,RightLabel = _Superette.Translations.Menu.colorprice..v.price.."$"},true,{
             onSelected = function()
                 TriggerServerEvent("_/Stax_/:BuyItem_/", Shop, v.price, v.name, v.label)
             end,
