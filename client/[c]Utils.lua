@@ -37,7 +37,7 @@ Citizen.CreateThread(function()
             local dst1 = #(playerPos - PositionSup)
             if dst1 < 3.0 then
                 wait = 0
-                DrawMarker(1, v.pos.x,v.pos.y,v.pos.z-1, 0, 0, 0, 0, 0, 0, 1.0, 1.0, 1.0, 255, 255, 255, 155, 0, 0, 0, 0, 0, 0, 0)
+                DrawMarker(1, PositionSup.x,PositionSup.y,PositionSup.z-1, 0, 0, 0, 0, 0, 0, 1.0, 1.0, 1.0, 255, 255, 255, 155, 0, 0, 0, 0, 0, 0, 0)
                 if dst1 < 2.0 then
                     ESX.ShowHelpNotification(_Superette.Translations.Menu.HelpNotif)
                     if IsControlJustReleased(1, 38) then
